@@ -26,4 +26,6 @@
    3. views
       1. R : CharacterListView
    4. templates/원위/
-      1. character_list.html
+      1. chara cter_list.html
+   5. urls
+      1. 원위:character_list
