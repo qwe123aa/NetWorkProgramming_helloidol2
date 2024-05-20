@@ -5,6 +5,19 @@
     <title>Character List</title>
 </head>
 <body>
-    {{ character_list }}
+    <table border="1">
+        <tr>
+            <th>#</th>
+            <th>name</th>
+            <th>feature</th>
+        </tr>
+        {% for character in character_list %}
+        <tr>
+            <td>{{ forloop.counter }}</td>
+            <td>{{ character.name }}</td>
+            <td>{{ character.feature }}</td>
+        </tr>
+        {% endfor %}
+    </table>
 </body>
 </html>
